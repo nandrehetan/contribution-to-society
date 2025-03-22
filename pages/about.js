@@ -54,55 +54,6 @@ const AboutPage = () => {
             importance to guide learners from basic to advanced levels.
           </Text>
           <Heading size="md" mb={2} mt={4}>
-            Story
-          </Heading>
-          <Text fontSize="md" mb={2}>
-            Hi, I am{" "}
-            <Link
-              color="red"
-              isExternal
-              href={"https://codeforces.com/profile/YouKn0wWho"}
-              textDecoration={"underline"}
-            >
-              YouKn0wWho
-            </Link>{" "}
-            and I have been doing CP for around 7 years and from the very
-            beginning what I have been feeling is a need for a comprehensive
-            topic list that will contain all sorts of topics from easy to
-            advanced with corresponding tutorials, problem lists and templates
-            so that I wouldn’t have to look at different sites, from here to
-            there. So what do you do when you think something is missing from
-            the world? Yeah, you create that thing! So here I am, sharing the
-            ultimate topic list that you will need in CP.
-          </Text>
-          <Heading size="md" mb={2} mt={4}>
-            History
-          </Heading>
-          <Text fontSize="md" mb={2}>
-            I previously created a topic list in 2021 and posted it on
-            Codeforces{" "}
-            <Link
-              color="blue.300"
-              isExternal
-              href={"https://codeforces.com/blog/entry/95106"}
-              textDecoration={"underline"}
-            >
-              here
-            </Link>
-            . It got great responses. It got 4000+ upvotes and the blog website
-            has been visited 200k+ times! But it contained links to only 1-2
-            resources and problems per topic and it didn’t contain basic topics
-            for beginners. Also, there was no way of tracking your progress.
-            <br />
-            <br />
-            Then in 2024, I decided to improve it, by a lot. It took me on
-            average 6h-10h per day for straight one month to complete this
-            project (also I was doing a full-time job during the whole time). I
-            hope it was worth it! I am also keeping it updated and adding new
-            topics, resources, and problems regularly. Also I am adding new
-            features that people are asking for.
-          </Text>
-          <Heading size="md" mb={2} mt={4}>
             Topics
           </Heading>
           <Text fontSize="md" mb={2}>
@@ -252,49 +203,7 @@ const AboutPage = () => {
               </ListItem>
             ))}
           </UnorderedList>
-          Note that the difficulty levels are subjective and may vary depending
-          on the learner's experience and familiarity with the topic.
-          <Heading size="md" mb={2} mt={4}>
-            Topic Filtering
-          </Heading>
-          <Text fontSize="md" mb={2}>
-            You can filter topics by difficulty and importance. The topics will
-            be displayed in a structured manner, with each category containing
-            subcategories and topics.
-          </Text>
-          <Heading size="md" mb={2} mt={4}>
-            Topic Searching
-          </Heading>
-          <Text fontSize="md" mb={2}>
-            You can also search for topics by name to quickly find the topic you
-            are looking for. The search is case-insensitive and will return all
-            topics that contain the search query.
-            <br />
-            Note that first the filtering happens and then the searching happens
-            on the filtered topics.
-            <br />
-            <b>
-              Also you can type / on keyboard to search for topics as a
-              shortcut.
-            </b>
-          </Text>
-          <Heading size="md" mb={2} mt={4}>
-            Last Words
-          </Heading>
-          <Text fontSize="md" mb={2}>
-            I have been doing this CP thing for around 7 years now! Like always,
-            all I want to say is, please don't forget to enjoy the journey and
-            have fun while riding the boat. Whatever you do, try to pick
-            something you love and try to be good at that. I hope my little
-            contribution will help you with your incredible journey. Best
-            wishes, my friend.
-            <img
-              src="https://cdn3.emoji.gg/emojis/8771_blobheart.png"
-              width="60px"
-              height="60px"
-              alt="blobheart"
-            />
-          </Text>
+          
         </Box>
       </Box>
     </Box>
