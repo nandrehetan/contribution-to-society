@@ -187,7 +187,7 @@ export default function TopicList() {
     if (highlightedTopic) {
       const timer = setTimeout(() => {
         setHighlightedTopic(null);
-      }, 2000); // 2 seconds
+      }, 1000); // 1 seconds
 
       return () => clearTimeout(timer); // Cleanup
     }
@@ -198,7 +198,7 @@ export default function TopicList() {
     if (highlightedSubCategory) {
       const timer = setTimeout(() => {
         setHighlightedSubCategory(null);
-      }, 2000); // 2 second
+      }, 1000); // 2 second
 
       return () => clearTimeout(timer); // Cleanup
     }
@@ -286,10 +286,10 @@ export default function TopicList() {
   return (
     <Box minH="95vh" bg={isLightMode ? "gray.100" : "#212225"}>
       <Head>
-        <title>The Ultimate Topic List | Static </title>
+        <title>Topic List</title>
         <meta
           name="description"
-          content="A comprehensive list of topics in Competitive Programming"
+          content="List of topics in Competitive Programming"
         />
       </Head>
       <Box
@@ -308,18 +308,17 @@ export default function TopicList() {
               cursor={"pointer"}
               onClick={() => router.push("")}
             >
-              The Ultimate Topic List
+              Topic List
               <Badge
                 colorScheme="blue"
                 ml="2"
                 fontSize="xs"
                 verticalAlign="super"
               >
-                static
               </Badge>
             </Heading>
             <Text>
-              A comprehensive list of topics in Competitive Programming
+              List of topics in Competitive Programming
             </Text>
           </Flex>
         </Center>
@@ -345,9 +344,9 @@ export default function TopicList() {
             </Box>
           </Tooltip>
         </Flex>
-        <Flex justifyContent="flex-end" p={[2, 4]}>
+        {/* <Flex justifyContent="flex-end" p={[2, 4]}>
           <SearchBar onOpen={onOpen} isLightMode={isLightMode} />
-        </Flex>
+        </Flex> */}
         <Flex
           justify={{ base: "flex-start", md: "space-between" }}
           alignItems={{ base: "flex-start", md: "center" }}
@@ -390,7 +389,7 @@ export default function TopicList() {
               <option value="1">★☆☆</option>
             </Select>
           </Flex>
-          <Box>
+          {/* <Box>
             <Text
               ml={2}
               mb={{ base: 2, md: 0 }}
@@ -400,7 +399,7 @@ export default function TopicList() {
             >
               Total Topics: {totalTopics}
             </Text>
-          </Box>
+          </Box> */}
         </Flex>
         <Accordion
           allowMultiple
@@ -482,7 +481,7 @@ export default function TopicList() {
             </AccordionPanel>
           </AccordionItem>
         </Accordion>
-        <Flex flexDirection="column" alignItems="flex-end" mr={2}>
+        {/* <Flex flexDirection="column" alignItems="flex-end" mr={2}>
           <Box>
             <Text
               mt={4}
@@ -504,32 +503,13 @@ export default function TopicList() {
               </Link>
             </Text>
           </Box>
-        </Flex>
+        </Flex> */}
         <Center mt={20}>
-          <Text color={isLightMode ? "gray.400" : "gray.500"} fontSize="sm">
-            This is a <i>static</i>{" "}
-            <Link
-              href="https://github.com/ShahjalalShohag/the-ultimate-topic-list"
-              isExternal
-              color="blue.400"
-            >
-              open-source
-            </Link>{" "}
-            backup of the original topic list. The original topic list is
-            available at{" "}
-            <Link
-              href="https://youkn0wwho.academy/topic-list"
-              isExternal
-              color="blue.400"
-            >
-              YouKn0wWho Academy
-            </Link>
-            .
-          </Text>
+         
         </Center>
       </Box>
 
-      {/* Search Modal */}
+      {/* Search Modal
       <Modal
         isOpen={isOpen}
         onClose={handleClose}
@@ -657,7 +637,7 @@ export default function TopicList() {
             )}
           </ModalBody>
         </ModalContent>
-      </Modal>
+      </Modal> */}
     </Box>
   );
 }
