@@ -53,34 +53,25 @@ export default function Navbar() {
                   justifyContent={"center"}
                   alignItems={"center"}
                 >
-                  <Logo />
-                  <Heading pl="0.5rem" size="md">
-                    <Text
-                      className={logostyles.logo}
-                      textShadow="0.1em 0.1em 0.15em rgba(0, 0, 0, 0.4)"
-                      color="whiteAlpha.900"
-                    >
-                      The Ultimate Topic List
-                    </Text>
-                  </Heading>
+                  
                 </Flex>
               </Link>
             </Box>
             <Spacer />
 
             <Flex align="center" flexGrow={1} justify="center">
-              <div>
+              {/* <div>
                 <NavLink href="/about">About</NavLink>
                 <NavLink href="/guideline">
                   {isMobile ? "Start" : "Start Here"}
                 </NavLink>
                 <NavLink
-                  href="https://github.com/ShahjalalShohag/code-library"
+                  href="https://github.com/nandrehetan/Competitive-Programming-Template"
                   isExternal
                 >
                   {isMobile ? "Library" : "Code Library"}
                 </NavLink>
-              </div>
+              </div> */}
               <Spacer />
 
               <Flex align="center">
@@ -89,14 +80,14 @@ export default function Navbar() {
                   colorScheme="whiteAlpha"
                   onClick={() =>
                     open(
-                      " https://github.com/ShahjalalShohag/the-ultimate-topic-list",
+                      " https://github.com/nandrehetan",
                       "_blank"
                     )
                   }
                 >
                   GitHub
                 </Button>
-                <Button
+                {/* <Button
                   ml={2}
                   size={isMobile ? "xs" : "sm"}
                   colorScheme="whiteAlpha"
@@ -105,7 +96,7 @@ export default function Navbar() {
                   }
                 >
                   Main Website
-                </Button>
+                </Button> */}
               </Flex>
             </Flex>
           </Flex>
@@ -158,12 +149,12 @@ const Logo = () => {
         transform: `rotate(${rotationAngle}deg)`,
       }}
     >
-      <Image
+      {/* <Image
         height={"40px"}
         width={"40px"}
         src="/logo.png"
         alt="YouKn0wWho Logo"
-      />
+      /> */}
     </div>
   );
 };
